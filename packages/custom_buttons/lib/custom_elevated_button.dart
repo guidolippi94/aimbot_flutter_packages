@@ -26,9 +26,7 @@ class CustomElevatedButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: callback,
       child: loading
-          ? const Center(
-              child: CircularProgressIndicator(),
-            )
+          ? const CircularProgressIndicator()
           : Row(
               mainAxisSize: MainAxisSize.min,
               children: [
